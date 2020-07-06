@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url("universe.jpg");
+  
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h2 style="color:red;">debris</h2>
+<p style="color:red;">Hover over the debris to see the effect.</p>
+
+<div class="container">
+  <img src="pics/db1.png" alt="Avatar" class="image">
+  <div class="overlay">i am debris 1</div>
+</div>
+<div class="container">
+  <img src="pics/db2.png" alt="Avatar" class="image">
+  <div class="overlay">i am debris 1</div>
+</div>
+<div class="container">
+  <img src="pics/db3.png" alt="Avatar" class="image">
+  <div class="overlay">i am debris 1</div>
+</div>
+<div class="container">
+  <img src="pics/db4.png" alt="Avatar" class="image">
+  <div class="overlay">i am debris 1</div>
+</div>
+<div class="container">
+  <img src="pics/db5.png" alt="Avatar" class="image">
+  <div class="overlay">i am debris 1</div>
+</div>
+
+<button onclick="myFunction()">NEXT</button>
+
+
+<script>
+function myFunction() {
+  location.replace("home.html")
+}
+</script>
+
+</body>
+</html>
+
